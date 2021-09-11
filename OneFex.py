@@ -12,8 +12,8 @@ name = (f"Links [.{extention}].txt")
 f = open(name, "w+")
 
 for element in data:
-	f.write(url + element + "\n")
+	f.write(element + "\n")
 
 f.close()
-
+print(f" Number of Links Extracted : {len(data)} ")
 print(f" Links Saved to  : ( {os.getcwd()}\\" + name + " )")
